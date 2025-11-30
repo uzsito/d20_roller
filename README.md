@@ -10,3 +10,9 @@ Build:
    1. Linux rendszereken: `go build -o d20app`
    2. Windowson: `go build -o d20app.exe`
 4. Ellenőrizzük, hogy létrejött-e a bináris futtatható állomány.
+
+Docker:
+1. A repo tartalmaz egy Dockerfile-t ami az alkalmazás konténerbe helyezésének leírója.
+2. A Dockerfile alapján lehet docker image-et készíteni az appból, amely így minden függőségével együtt könnyen hordozhatóvá válik.
+   1. Docker image készítése, a Dockerfile könyvtárában állva: `docker build -t d20-roller:v1 .`
+3. Az elkészült Docker image-ből futtatható a konténer: `docker run -p 8080:8080 d20-roller:v1`
