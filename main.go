@@ -70,7 +70,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Fprintf(w, `</div>`)
 
-	fmt.Fprintf(w, `<p>Összeg: %d</p><p>Frissítsd az oldalt egy új dobáshoz!</p></body></html>`, total)
+	fmt.Fprintf(w, `<p>Összeg: %d</p></body></html>`, total)
 }
 
 func checkedAttr(dice int, value int) string {
