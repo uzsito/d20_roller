@@ -22,10 +22,13 @@ A felhasználói felület elérhető a http://localhost:8080 url-en azon a gépe
 **CD - Futtatás felhő szolgáltatással**
 1. Szolgáltató: Render (free tier)  
 2. Deploy lépések:
-   1. Regisztráció Render.com-on, GitHub repo csatlakoztatása.
-   2. Új Web Service létrehozása
-   3. Build parancs: `go build -o d20app`
-   4. Start parancs: `./d20app`
+   1. Regisztráció Render.com-on.
+   2. GitHub repo csatlakoztatása, engedélyek megadása.
+   3. Új Web Service létrehozása, programnyelv beállítása.
+   4. Build parancs beállítása: `go build -o d20app`
+   5. Start parancs beállítása: `./d20app`
+   6. Eredmény: a Render a repo tartalma alapján sikeresen buildeli az alkalmazást, és futtatja is.
+   7. Visszaellenőrzés: commitoltam változtatást (neptun kód elhelyezése), és pár perc múlva a Render már deploy-olta is a friss változatot.
 
 Megj.: Az applikáció go.mod leírójában frissebb Go verzió volt megkövetelve, mint amit a Render tud, ezért csökkentenem kellett.
 
