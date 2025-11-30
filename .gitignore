@@ -1,0 +1,3 @@
+# Ignore Go build output
+d20app
+d20app.exe
