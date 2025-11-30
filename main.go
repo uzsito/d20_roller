@@ -20,10 +20,26 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, `
 		<html>
-			<head><title>D20 dobás</title></head>
-			<body style="font-family: Arial; text-align: center; margin-top: 50px; background-color: #f0f8ff;">
+			<head>
+				<title>D20 dobás</title>
+				<style>
+					body { font-family: Arial; text-align: center; margin-top: 50px; background-color: #f0f8ff; }
+					.circle {
+						width: 100px;
+						height: 100px;
+						border-radius: 50%%;
+						border: 3px solid %s;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 36px;
+						margin: 0 auto 20px auto;
+					}
+				</style>
+			</head>
+			<body>
 				<h1 style="color: #1e90ff;">D20 Kockadobó</h1>
-				<h2 style="color:%s;">Eredmény: %d</h2>
+				<div class="circle">%d</div>
 				<p>Frissítsd az oldalt egy új dobáshoz!</p>
 				<p>A kritikus dobások színesek.</p>
 			</body>
