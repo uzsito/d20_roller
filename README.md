@@ -1,7 +1,7 @@
 D20 Kockadobó Alkalmazás
 
 Az alkalmazás egy véletlenszerű D20 kockadobást végez el, és ennek eredményét webes felületen jeleníti meg.
-A felhasználói felület elérhető a http://localhost:8080 url-en.
+A felhasználói felület elérhető a http://localhost:8080 url-en azon a gépen, ami az alkalmazást futtatja.
 
 Build:
 1. Telepítsük az operációs rendszerünknek megfelelő Go-t: https://go.dev/doc/install
