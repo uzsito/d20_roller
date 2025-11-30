@@ -21,8 +21,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `
 		<html>
 			<head><title>D20 dobás</title></head>
-			<body style="font-family: Arial; text-align: center; margin-top: 50px;">
-				<h1>D20 Kockadobó</h1>
+			<body style="font-family: Arial; text-align: center; margin-top: 50px; background-color: #f0f8ff;">
+				<h1 style="color: #1e90ff;">D20 Kockadobó</h1>
 				<h2 style="color:%s;">Eredmény: %d</h2>
 				<p>Frissítsd az oldalt egy új dobáshoz!</p>
 				<p>A kritikus dobások színesek.</p>
