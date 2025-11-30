@@ -7,6 +7,6 @@ Build:
 1. Telepítsük az operációs rendszerünknek megfelelő Go-t: https://go.dev/doc/install
 2. A rendszerünk parancssoros felületével navigáljunk a forráskód könyvtárába.
 3. Adjuk ki a következő build parancsok valamelyikét: 
-    3.1 Linux rendszereken: go build -o d20app
-    3.2 Windowson: go build -o d20app.exe
+   1. Linux rendszereken: `go build -o d20app`
+   2. Windowson: `go build -o d20app.exe`
 4. Ellenőrizzük, hogy létrejött-e a bináris futtatható állomány.
