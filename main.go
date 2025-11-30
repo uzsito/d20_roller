@@ -56,7 +56,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 				</style>
 			</head>
 			<body>
-				<h1 style="color: #1e90ff;">D20 Kockadobó</h1>
+				<h1 style="color: #1e90ff;">D20 Kockadobó S3251Z</h1>
 				<form method="post">
 					<label><input type="radio" name="dice" value="1" %s> 1 kocka</label>
 					<label><input type="radio" name="dice" value="2" %s> 2 kocka</label>
